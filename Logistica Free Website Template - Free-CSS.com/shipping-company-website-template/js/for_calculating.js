@@ -11,6 +11,7 @@ function placing_value_to_address(inpCatg,regId){
         if (e.getAttribute('onclick') === `placing_value_to_address('${inpCatg}','${regId}')`){
             console.info(e);
             writeRegionToPlaceHolder(inpCatg,e);
+            hideSearchResultBody(inpCatg);
             return;
         };
 
