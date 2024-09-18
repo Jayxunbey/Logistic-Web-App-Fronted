@@ -1,0 +1,1 @@
+import{k as n,Q as a,E as o,X as e,a3 as t}from"./c1m8qkdf.js";const r={class:"text-center mb-1"},i=e("span",{class:"visually-hidden"},"Loading...",-1),c=[i],d=n({__name:"Spinner",props:{size:{}},setup(_){return(s,l)=>(a(),o("div",r,[e("div",{class:t(["spinner-border text-orange",{"spinner-border-sm":s.size=="small"}]),role:"status"},c,2)]))}});export{d as _};

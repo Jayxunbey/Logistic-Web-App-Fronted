@@ -1,0 +1,690 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style-for-canva.css">
+    <title>Document</title>
+</head>
+<body>
+
+
+  
+    <section id="calculator" class="position-relative" data-v-83e86a3a>
+        <form novalidate class="container calculator-container position-relative overflow-hidden" data-v-83e86a3a>
+            <h2 class="calculator-heading text-center mb-24" data-v-83e86a3a>Calculate shipping cost
+            </h2>
+            <div class="action-buttons" data-v-83e86a3a>
+                <ul class="d-flex w-100 justify-content-center align-items-center actions" data-v-83e86a3a>
+                    <!-- [
+                    <li class="action-item" data-v-83e86a3a data-v-1a5a61a5><button data-v-1a5a61a5><img
+                                onerror="this.setAttribute(&#39;data-error&#39;, 1)" width="25" alt
+                                data-nuxt-img
+                                srcset="/_ipx/w_25/assets/image/icons/options.svg 1x, /_ipx/w_50/assets/image/icons/options.svg 2x"
+                                src="_ipx/w_25/assets/image/icons/options.svg" class="icon"
+                                data-v-1a5a61a5><span data-v-1a5a61a5>Shipping</span></button></li>
+                    <li class="action-item" data-v-83e86a3a data-v-1a5a61a5><button data-v-1a5a61a5><img
+                                onerror="this.setAttribute(&#39;data-error&#39;, 1)" width="25" alt
+                                data-nuxt-img
+                                srcset="/_ipx/w_25/assets/image/icons/options.svg 1x, /_ipx/w_50/assets/image/icons/options.svg 2x"
+                                src="_ipx/w_25/assets/image/icons/options.svg" class="icon"
+                                data-v-1a5a61a5><span data-v-1a5a61a5>Migration</span></button></li>
+                    <li class="action-item" data-v-83e86a3a data-v-1a5a61a5><button data-v-1a5a61a5><img
+                                onerror="this.setAttribute(&#39;data-error&#39;, 1)" width="25" alt
+                                data-nuxt-img
+                                srcset="/_ipx/w_25/assets/image/icons/options.svg 1x, /_ipx/w_50/assets/image/icons/options.svg 2x"
+                                src="_ipx/w_25/assets/image/icons/options.svg" class="icon"
+                                data-v-1a5a61a5><span data-v-1a5a61a5>Mebel tashish</span></button></li>
+                    <li class="action-item" data-v-83e86a3a data-v-1a5a61a5><button data-v-1a5a61a5><img
+                                onerror="this.setAttribute(&#39;data-error&#39;, 1)" width="25" alt
+                                data-nuxt-img
+                                srcset="/_ipx/w_25/assets/image/icons/options.svg 1x, /_ipx/w_50/assets/image/icons/options.svg 2x"
+                                src="_ipx/w_25/assets/image/icons/options.svg" class="icon"
+                                data-v-1a5a61a5><span data-v-1a5a61a5>To&#39;yga
+                                tayyorgarlik</span></button></li>] -->
+                </ul>
+            </div>
+            <div class="calculator h-100" data-v-83e86a3a>
+                <div class="row d-lg-flex h-100" data-v-83e86a3a>
+                    <div class="flex-grow-1 h-auto col-lg-4 mb-3 mb-lg-0" data-v-83e86a3a>
+                        <div class="calculator-data d-flex flex-column justify-content-between position-relative h-100 overflow-y-auto"
+                            data-v-83e86a3a>
+                            <div class="data" data-v-83e86a3a>
+                                <h6 class="heading" data-v-83e86a3a>Addresses (from/to)</h6>
+                                <!--[-->
+                                <div class="input-container dropdown" data-v-83e86a3a>
+                                    <div class="input-box position-relative">
+                                        <div class="input-group" data-bs-toggle="dropdown" role="row"
+                                            data-bs-auto-close="outside" aria-expanded="false">
+                                            <div class="form-floating"><input type="text"
+                                                    class="form-control border-0 bg-transparent" id="address_from_0"
+                                                    placeholder="Pickup location"><label for="address_from_0">Pickup
+                                                    location</label></div>
+                                        </div>
+                                        <div class="dropdown-menu w-100">
+                                            <div class="search-input-dropdown">
+                                                <ul class="address-search-results p-0 m-0">
+                                                    <li class="text-center py-4" style="display:none;">
+                                                        <div class="text-center mb-1">
+                                                            <div class="spinner-border text-orange" role="status"><span
+                                                                    class="visually-hidden">Loading...</span>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="address-item no-search-results text-center">
+                                                        no search results...</li><!--[--><!--]-->
+                                                </ul>
+                                                <!-- <button
+                                                    class="d-flex justify-content-between align-items-center select-on-map-btn w-100"
+                                                    type="button"><span>Выбрать на карте</span><img
+                                                        onerror="this.setAttribute(&#39;data-error&#39;, 1)"
+                                                        width="25" alt="Casva" data-nuxt-img
+                                                        srcset="/_ipx/w_25/assets/image/icons/map.svg 1x, /_ipx/w_50/assets/image/icons/map.svg 2x"
+                                                        class=""
+                                                        src="_ipx/w_25/assets/image/icons/map.svg"></button> -->
+                                                <!-- <div class="accordion" id="savedAddress-0">
+                                                    <div class="accordion-item" id="savedAddress-0">
+                                                        <h2 class="accordion-header"><button
+                                                                class="accordion-button shadow-none collapsed"
+                                                                type="button" data-bs-toggle="collapse"
+                                                                data-bs-target="#savedAddress-0-collapse"
+                                                                aria-expanded="false"
+                                                                aria-controls="savedAddress-0-collapse">Сохраненные
+                                                                адреса</button></h2>
+                                                        <div id="savedAddress-0-collapse"
+                                                            class="accordion-collapse collapse"
+                                                            data-bs-parent="#savedAddress-0">
+                                                            <ul class="accordion-body p-0 m-0"> 
+                                                                </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="accordion" id="recentAddress-0">
+                                                    <div class="accordion-item" id="recentAddress-0">
+                                                        <h2 class="accordion-header"><button
+                                                                class="accordion-button shadow-none collapsed"
+                                                                type="button" data-bs-toggle="collapse"
+                                                                data-bs-target="#recentAddress-0-collapse"
+                                                                aria-expanded="false"
+                                                                aria-controls="recentAddress-0-collapse">Часто
+                                                                используемые</button></h2>
+                                                        <div id="recentAddress-0-collapse"
+                                                            class="accordion-collapse collapse"
+                                                            data-bs-parent="#recentAddress-0">
+                                                            <ul class="accordion-body p-0 m-0">
+                                                                </ul>
+                                                        </div>
+                                                    </div>
+                                                </div> -->
+                                            </div>
+                                        </div>
+                                        <!-- <button class="p-0 m-0 close-btn position-absolute"
+                                            style="display:none;"><img
+                                                onerror="this.setAttribute(&#39;data-error&#39;, 1)"
+                                                width="22" alt data-nuxt-img
+                                                srcset="/_ipx/w_22/assets/image/icons/close.svg 1x, /_ipx/w_44/assets/image/icons/close.svg 2x"
+                                                class=""
+                                                src="_ipx/w_22/assets/image/icons/close.svg"></button> -->
+                                    </div>
+                                    <!-- <button class="input-container__location-button"
+                                        type="button"><img
+                                            onerror="this.setAttribute(&#39;data-error&#39;, 1)" width="25"
+                                            alt data-nuxt-img
+                                            srcset="/_ipx/w_25/assets/image/icons/location.svg 1x, /_ipx/w_50/assets/image/icons/location.svg 2x"
+                                            class=""
+                                            src="_ipx/w_25/assets/image/icons/location.svg"></button> -->
+                                </div>
+                                <!-- <button class="mb-3 w-100 text-center add-address-btn"
+                                    type="button" data-v-83e86a3a><img
+                                        onerror="this.setAttribute(&#39;data-error&#39;, 1)" width="20"
+                                        alt="Casva" data-nuxt-img
+                                        srcset="/_ipx/w_20/assets/image/icons/plus.svg 1x, /_ipx/w_40/assets/image/icons/plus.svg 2x"
+                                        src="_ipx/w_20/assets/image/icons/plus.svg" class=""><span
+                                        class="text">Qo&#39;shish</span></button> -->
+                                <div class="input-container dropdown" data-v-83e86a3a>
+                                    <div class="input-box position-relative">
+                                        <div class="input-group" data-bs-toggle="dropdown" role="row"
+                                            data-bs-auto-close="outside" aria-expanded="false">
+                                            <div class="form-floating"><input type="text"
+                                                    class="form-control border-0 bg-transparent" id="address_to_0"
+                                                    placeholder="Detrainment location"><label
+                                                    for="address_to_0">Detrainment location</label></div>
+                                        </div>
+                                        <div class="dropdown-menu w-100">
+                                            <div class="search-input-dropdown">
+                                                <ul class="address-search-results p-0 m-0">
+                                                    <li class="text-center py-4" style="display:none;">
+                                                        <div class="text-center mb-1">
+                                                            <div class="spinner-border text-orange" role="status"><span
+                                                                    class="visually-hidden">Loading...</span>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="address-item no-search-results text-center">
+                                                        no searching results</li><!--[--><!--]-->
+                                                </ul>
+                                                <!-- <button
+                                                    class="d-flex justify-content-between align-items-center select-on-map-btn w-100"
+                                                    type="button"><span>Выбрать на карте</span><img
+                                                        onerror="this.setAttribute(&#39;data-error&#39;, 1)"
+                                                        width="25" alt="Casva" data-nuxt-img
+                                                        srcset="/_ipx/w_25/assets/image/icons/map.svg 1x, /_ipx/w_50/assets/image/icons/map.svg 2x"
+                                                        class=""
+                                                        src="_ipx/w_25/assets/image/icons/map.svg"></button>
+                                                <div class="accordion" id="savedAddress-0">
+                                                    <div class="accordion-item" id="savedAddress-0">
+                                                        <h2 class="accordion-header"><button
+                                                                class="accordion-button shadow-none collapsed"
+                                                                type="button" data-bs-toggle="collapse"
+                                                                data-bs-target="#savedAddress-0-collapse"
+                                                                aria-expanded="false"
+                                                                aria-controls="savedAddress-0-collapse">Сохраненные
+                                                                адреса</button></h2>
+                                                        <div id="savedAddress-0-collapse"
+                                                            class="accordion-collapse collapse"
+                                                            data-bs-parent="#savedAddress-0">
+                                                            <ul class="accordion-body p-0 m-0">
+                                                                </ul>
+                                                        </div>
+                                                    </div>
+                                                </div> -->
+                                                <!-- <div class="accordion" id="recentAddress-0">
+                                                    <div class="accordion-item" id="recentAddress-0">
+                                                        <h2 class="accordion-header"><button
+                                                                class="accordion-button shadow-none collapsed"
+                                                                type="button" data-bs-toggle="collapse"
+                                                                data-bs-target="#recentAddress-0-collapse"
+                                                                aria-expanded="false"
+                                                                aria-controls="recentAddress-0-collapse">Часто
+                                                                используемые</button></h2>
+                                                        <div id="recentAddress-0-collapse"
+                                                            class="accordion-collapse collapse"
+                                                            data-bs-parent="#recentAddress-0">
+                                                            <ul class="accordion-body p-0 m-0">
+                                                               </ul>
+                                                        </div>
+                                                    </div>
+                                                </div> -->
+                                            </div>
+                                        </div>
+                                        <!-- <button class="p-0 m-0 close-btn position-absolute"
+                                            style="display:none;"><img
+                                                onerror="this.setAttribute(&#39;data-error&#39;, 1)"
+                                                width="22" alt data-nuxt-img
+                                                srcset="/_ipx/w_22/assets/image/icons/close.svg 1x, /_ipx/w_44/assets/image/icons/close.svg 2x"
+                                                class=""
+                                                src="_ipx/w_22/assets/image/icons/close.svg"></button> -->
+                                    </div>
+                                    <!-- <button class="input-container__location-button"
+                                        type="button"><img
+                                            onerror="this.setAttribute(&#39;data-error&#39;, 1)" width="25"
+                                            alt data-nuxt-img
+                                            srcset="/_ipx/w_25/assets/image/icons/location.svg 1x, /_ipx/w_50/assets/image/icons/location.svg 2x"
+                                            class=""
+                                            src="_ipx/w_25/assets/image/icons/location.svg">--></button>
+                                </div><!--]-->
+                                <!-- <button class="mb-3 w-100 text-center add-address-btn"
+                                    type="button" data-v-83e86a3a><img
+                                        onerror="this.setAttribute(&#39;data-error&#39;, 1)" width="20"
+                                        alt="Casva" data-nuxt-img
+                                        srcset="/_ipx/w_20/assets/image/icons/plus.svg 1x, /_ipx/w_40/assets/image/icons/plus.svg 2x"
+                                        src="_ipx/w_20/assets/image/icons/plus.svg" class=""><span
+                                        class="text">Qo&#39;shish</span></button> -->
+                                <div class="d-flex justify-content-end align-items-center pb-4" data-v-83e86a3a>
+                                    <!--[--><label
+                                        class="round-trip-wrapper user-select-none d-flex align-items-center">Going and
+                                        Coming Back
+                                        <input type="checkbox" name="is_full_round_trip"></label><!--]-->
+                                </div><!---->
+
+                                <!-- Time Selection -->
+
+                                <div>
+                                    <style>
+                                    </style>
+                                    <form id="dateTimeForm">
+
+                                        <div class="field-group">
+                                            <label for="date">Date:</label>
+                                            <input type="date" id="date" name="date" required>
+                                        </div>
+                                        <div class="field-group">
+                                            <label for="time">Time:</label>
+                                            <input type="time" id="time" name="time" required>
+                                        </div>
+
+                                    </form>
+                                </div>
+
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-grow-1 h-auto col-lg-4 mb-3 mb-lg-0" data-v-83e86a3a>
+                        <div class="calculator-data d-flex flex-column justify-content-between position-relative h-100"
+                            data-v-83e86a3a>
+                            <div data-v-83e86a3a>
+                                <h6 class="heading" data-v-83e86a3a>Select Transport Option</h6>
+                                <div class="truck-types-list overflow-scroll" data-v-83e86a3a data-v-80eec8a6>
+                                    <div class="tabbar" data-v-80eec8a6><button type="button" class="active"
+                                            data-v-80eec8a6>Full</button><button type="button" class=""
+                                            data-v-80eec8a6>Partially</button></div>
+                                    <div class="text-center mb-1" style="display:none;" data-v-80eec8a6>
+                                        <div class="spinner-border text-orange" role="status"><span
+                                                class="visually-hidden">Loading...</span></div>
+                                    </div><!--[-->
+                                    <div class="full-load" data-v-80eec8a6>
+                                        <div data-v-80eec8a6>
+                                            <div data-v-80eec8a6="">
+                                                <div data-v-80eec8a6="" class="truck-type input-container">
+                                                    <div
+                                                        class="input-box form-check d-flex align-items-center position-relative">
+                                                        <input class="custom-radio-input" type="radio" id="14_Labo"
+                                                            name="truck_type" value="0" checked=""><label
+                                                            class="w-100 form-check-label m-0" for="14_Labo">
+                                                            <div
+                                                                class="truck-type-container w-100 d-flex justify-content-between align-items-center">
+                                                                <div class="flex-grow-1 info-container">
+                                                                    <p class="p-0 m-0 truck-name">Labo</p>
+                                                                    <p class="p-0 m-0 dimensions">2.15x1.15x1.35</p>
+                                                                </div>
+                                                                <div class="truck-icon"><img
+                                                                        src="https://api.casva.uz/uploads/car_types/14_62ce426915f96.svg"
+                                                                        alt="`{{ truck.title }} in Casva"></div>
+                                                            </div>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div data-v-80eec8a6="" class="truck-type input-container">
+                                                    <div
+                                                        class="input-box form-check d-flex align-items-center position-relative">
+                                                        <input class="custom-radio-input" type="radio" id="21_Bongo"
+                                                            name="truck_type" value="1"><label
+                                                            class="w-100 form-check-label m-0" for="21_Bongo">
+                                                            <div
+                                                                class="truck-type-container w-100 d-flex justify-content-between align-items-center">
+                                                                <div class="flex-grow-1 info-container">
+                                                                    <p class="p-0 m-0 truck-name">Bongo</p>
+                                                                    <p class="p-0 m-0 dimensions">2.85x1.75x1.7</p>
+                                                                </div>
+                                                                <div class="truck-icon"><img
+                                                                        src="https://api.casva.uz/uploads/car_types/21_62ce427000ae0.svg"
+                                                                        alt="`{{ truck.title }} in Casva"></div>
+                                                            </div>
+                                                        </label></div>
+                                                </div>
+                                                <div data-v-80eec8a6="" class="truck-type input-container">
+                                                    <div
+                                                        class="input-box form-check d-flex align-items-center position-relative">
+                                                        <input class="custom-radio-input" type="radio" id="20_Furgon"
+                                                            name="truck_type" value="2"><label
+                                                            class="w-100 form-check-label m-0" for="20_Furgon">
+                                                            <div
+                                                                class="truck-type-container w-100 d-flex justify-content-between align-items-center">
+                                                                <div class="flex-grow-1 info-container">
+                                                                    <p class="p-0 m-0 truck-name">Furgon</p>
+                                                                    <p class="p-0 m-0 dimensions">3.4x1.65x1.9</p>
+                                                                </div>
+                                                                <div class="truck-icon"><img
+                                                                        src="https://api.casva.uz/uploads/car_types/20_62ce427768009.svg"
+                                                                        alt="`{{ truck.title }} in Casva"></div>
+                                                            </div>
+                                                        </label></div>
+                                                </div>
+                                                <div data-v-80eec8a6="" class="truck-type input-container">
+                                                    <div
+                                                        class="input-box form-check d-flex align-items-center position-relative">
+                                                        <input class="custom-radio-input" type="radio" id="3_ISUZU 5"
+                                                            name="truck_type" value="3"><label
+                                                            class="w-100 form-check-label m-0" for="3_ISUZU 5">
+                                                            <div
+                                                                class="truck-type-container w-100 d-flex justify-content-between align-items-center">
+                                                                <div class="flex-grow-1 info-container">
+                                                                    <p class="p-0 m-0 truck-name">ISUZU 5</p>
+                                                                    <p class="p-0 m-0 dimensions">4.8x2.05x1.92</p>
+                                                                </div>
+                                                                <div class="truck-icon"><img
+                                                                        src="https://api.casva.uz/uploads/car_types/3_62ce427e72603.svg"
+                                                                        alt="`{{ truck.title }} in Casva"></div>
+                                                            </div>
+                                                        </label></div>
+                                                </div>
+                                                <div data-v-80eec8a6="" class="truck-type input-container">
+                                                    <div
+                                                        class="input-box form-check d-flex align-items-center position-relative">
+                                                        <input class="custom-radio-input" type="radio" id="2_ISUZU 10"
+                                                            name="truck_type" value="4"><label
+                                                            class="w-100 form-check-label m-0" for="2_ISUZU 10">
+                                                            <div
+                                                                class="truck-type-container w-100 d-flex justify-content-between align-items-center">
+                                                                <div class="flex-grow-1 info-container">
+                                                                    <p class="p-0 m-0 truck-name">ISUZU 10</p>
+                                                                    <p class="p-0 m-0 dimensions">6.9x2.4x2</p>
+                                                                </div>
+                                                                <div class="truck-icon"><img
+                                                                        src="https://api.casva.uz/uploads/car_types/2_63b7b0e4e8e09.svg"
+                                                                        alt="`{{ truck.title }} in Casva"></div>
+                                                            </div>
+                                                        </label></div>
+                                                </div>
+                                                <div data-v-80eec8a6="" class="truck-type input-container">
+                                                    <div
+                                                        class="input-box form-check d-flex align-items-center position-relative">
+                                                        <input class="custom-radio-input" type="radio" id="19_Gruzovik"
+                                                            name="truck_type" value="5"><label
+                                                            class="w-100 form-check-label m-0" for="19_Gruzovik">
+                                                            <div
+                                                                class="truck-type-container w-100 d-flex justify-content-between align-items-center">
+                                                                <div class="flex-grow-1 info-container">
+                                                                    <p class="p-0 m-0 truck-name">Gruzovik</p>
+                                                                    <p class="p-0 m-0 dimensions">7x2.4x2.6</p>
+                                                                </div>
+                                                                <div class="truck-icon"><img
+                                                                        src="https://api.casva.uz/uploads/car_types/19_63634d69645c2.svg"
+                                                                        alt="`{{ truck.title }} in Casva"></div>
+                                                            </div>
+                                                        </label></div>
+                                                </div>
+                                                <div data-v-80eec8a6="" class="truck-type input-container">
+                                                    <div
+                                                        class="input-box form-check d-flex align-items-center position-relative">
+                                                        <input class="custom-radio-input" type="radio" id="6_Fura Budka"
+                                                            name="truck_type" value="6"><label
+                                                            class="w-100 form-check-label m-0" for="6_Fura Budka">
+                                                            <div
+                                                                class="truck-type-container w-100 d-flex justify-content-between align-items-center">
+                                                                <div class="flex-grow-1 info-container">
+                                                                    <p class="p-0 m-0 truck-name">Fura Budka</p>
+                                                                    <p class="p-0 m-0 dimensions">13.6x2.45x2.7</p>
+                                                                </div>
+                                                                <div class="truck-icon"><img
+                                                                        src="https://api.casva.uz/uploads/car_types/6_63663b0922b4a.svg"
+                                                                        alt="`{{ truck.title }} in Casva"></div>
+                                                            </div>
+                                                        </label></div>
+                                                </div>
+                                                <div data-v-80eec8a6="" class="truck-type input-container">
+                                                    <div
+                                                        class="input-box form-check d-flex align-items-center position-relative">
+                                                        <input class="custom-radio-input" type="radio" id="4_Tentovka"
+                                                            name="truck_type" value="7"><label
+                                                            class="w-100 form-check-label m-0" for="4_Tentovka">
+                                                            <div
+                                                                class="truck-type-container w-100 d-flex justify-content-between align-items-center">
+                                                                <div class="flex-grow-1 info-container">
+                                                                    <p class="p-0 m-0 truck-name">Tentovka</p>
+                                                                    <p class="p-0 m-0 dimensions">13.6x2.45x2.81</p>
+                                                                </div>
+                                                                <div class="truck-icon"><img
+                                                                        src="https://api.casva.uz/uploads/car_types/4_62ce4297ce44f.svg"
+                                                                        alt="`{{ truck.title }} in Casva"></div>
+                                                            </div>
+                                                        </label></div>
+                                                </div>
+                                                <div data-v-80eec8a6="" class="truck-type input-container">
+                                                    <div
+                                                        class="input-box form-check d-flex align-items-center position-relative">
+                                                        <input class="custom-radio-input" type="radio" id="5_Shalanda"
+                                                            name="truck_type" value="8"><label
+                                                            class="w-100 form-check-label m-0" for="5_Shalanda">
+                                                            <div
+                                                                class="truck-type-container w-100 d-flex justify-content-between align-items-center">
+                                                                <div class="flex-grow-1 info-container">
+                                                                    <p class="p-0 m-0 truck-name">Shalanda</p>
+                                                                    <p class="p-0 m-0 dimensions">13.6x2.45x2.99</p>
+                                                                </div>
+                                                                <div class="truck-icon"><img
+                                                                        src="https://api.casva.uz/uploads/car_types/5_636637cff1cfd.svg"
+                                                                        alt="`{{ truck.title }} in Casva"></div>
+                                                            </div>
+                                                        </label></div>
+                                                </div>
+                                                <div data-v-80eec8a6="" class="truck-type input-container">
+                                                    <div
+                                                        class="input-box form-check d-flex align-items-center position-relative">
+                                                        <input class="custom-radio-input" type="radio" id="18_Paravoz"
+                                                            name="truck_type" value="9"><label
+                                                            class="w-100 form-check-label m-0" for="18_Paravoz">
+                                                            <div
+                                                                class="truck-type-container w-100 d-flex justify-content-between align-items-center">
+                                                                <div class="flex-grow-1 info-container">
+                                                                    <p class="p-0 m-0 truck-name">Paravoz</p>
+                                                                    <p class="p-0 m-0 dimensions">13.6x2.45x3</p>
+                                                                </div>
+                                                                <div class="truck-icon"><img
+                                                                        src="https://api.casva.uz/uploads/car_types/18_62ce42acac7f6.svg"
+                                                                        alt="`{{ truck.title }} in Casva"></div>
+                                                            </div>
+                                                        </label></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!--]--><!---->
+                                </div>
+                            </div>
+                            <!-- <div class="feature-button m-0" data-v-83e86a3a><button class="w-100 text-center"
+                                    type="button" data-v-83e86a3a>Manual entry of cargo volume</button></div> -->
+                        </div>
+                    </div>
+                    <div class="flex-grow-1 h-auto col-lg-4 mb-3 mb-lg-0" data-v-83e86a3a>
+                        <div class="calculator-data d-flex flex-column justify-content-between position-relative h-100"
+                            data-v-83e86a3a>
+                            <div class="data" data-v-83e86a3a>
+                                <h6 class="heading" data-v-83e86a3a>Order details</h6>
+                                <div class="input-container mb-16 dropdown" data-v-83e86a3a data-v-257d3a35>
+                                    <div class="input-box position-relative" data-v-257d3a35>
+                                        <div class="input-group" data-bs-toggle="dropdown" role="row"
+                                            aria-expanded="false" data-v-257d3a35>
+                                            <div class="form-floating position-relative" data-v-257d3a35>
+                                                <!--[-->
+                                                <div class="form-control border-0 shadow-none bg-transparent"
+                                                    data-v-257d3a35><!----></div><!--]--><label for="parcel_type"
+                                                    data-v-257d3a35>Cargo type</label><img
+                                                    src="data:image/svg+xml,%3csvg%20width=&#39;24&#39;%20height=&#39;24&#39;%20viewBox=&#39;0%200%2024%2024&#39;%20fill=&#39;none&#39;%20xmlns=&#39;http://www.w3.org/2000/svg&#39;%3e%3cpath%20d=&#39;M11.9057%2016.9057C11.7035%2016.9057%2011.51%2016.8244%2011.3687%2016.6796L3.27467%208.38425C2.98555%208.08762%202.99117%207.61287%203.2878%207.32337C3.58405%207.03425%204.05917%207.04025%204.3483%207.3365L11.9053%2015.0817L19.4784%207.32037C19.7679%207.02375%2020.243%207.0185%2020.5389%207.30725C20.8356%207.59637%2020.8415%208.0715%2020.552%208.36812L12.4427%2016.6796C12.3013%2016.8244%2012.1078%2016.9057%2011.9057%2016.9057Z&#39;%20fill=&#39;black&#39;/%3e%3c/svg%3e"
+                                                    class="arrow position-absolute" alt="" data-v-257d3a35>
+                                            </div>
+                                            <ul class="dropdown-menu w-100 dd-animated dd-menu-start bg-white shadow-sm"
+                                                data-v-257d3a35><!--[--><!--]--></ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="input-container mb-16" selected-value data-v-83e86a3a data-v-6eabd5f2>
+                                    <div class="input-box position-relative" data-v-6eabd5f2>
+                                        <div class="input-group" data-v-6eabd5f2>
+                                            <div class="form-floating" data-v-6eabd5f2><!--[--><input type="text"
+                                                    class="form-control border-0 bg-transparent" name="weight"
+                                                    id="weight" placeholder="Og&#39;irligi" value
+                                                    data-v-6eabd5f2><!----><!--]--><label for="weight"
+                                                    data-v-6eabd5f2>Weight <!----></label></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="input-container mb-16" selected-value data-v-83e86a3a data-v-fe6af0d5>
+                                    <div class="input-box position-relative" data-v-fe6af0d5>
+                                        <div class="input-group" data-v-fe6af0d5>
+                                            <div class="form-floating" data-v-fe6af0d5><!--[--><input type="text"
+                                                    class="phone-number-input form-control border-0 bg-transparent"
+                                                    id="receiver_phone" name="receiver_phone"
+                                                    placeholder="Qabul qiluvchi raqami" value="+998"
+                                                    data-v-fe6af0d5><!--]--><label for="receiver_phone"
+                                                    data-v-fe6af0d5>Receiver number</label></div>
+                                        </div>
+                                    </div><!---->
+                                </div>
+                                <div class="input-container mb-16 dropdown" data-v-83e86a3a data-v-257d3a35>
+                                    <div class="input-box position-relative" data-v-257d3a35>
+                                        <div class="input-group" data-bs-toggle="dropdown" role="row"
+                                            aria-expanded="false" data-v-257d3a35>
+                                            <div class="form-floating position-relative" data-v-257d3a35>
+                                                <!--[-->
+                                                <div class="form-control border-0 shadow-none bg-transparent"
+                                                    data-v-257d3a35><!----></div><!--]--><label for="payer"
+                                                    data-v-257d3a35>Who pays</label><img
+                                                    src="data:image/svg+xml,%3csvg%20width=&#39;24&#39;%20height=&#39;24&#39;%20viewBox=&#39;0%200%2024%2024&#39;%20fill=&#39;none&#39;%20xmlns=&#39;http://www.w3.org/2000/svg&#39;%3e%3cpath%20d=&#39;M11.9057%2016.9057C11.7035%2016.9057%2011.51%2016.8244%2011.3687%2016.6796L3.27467%208.38425C2.98555%208.08762%202.99117%207.61287%203.2878%207.32337C3.58405%207.03425%204.05917%207.04025%204.3483%207.3365L11.9053%2015.0817L19.4784%207.32037C19.7679%207.02375%2020.243%207.0185%2020.5389%207.30725C20.8356%207.59637%2020.8415%208.0715%2020.552%208.36812L12.4427%2016.6796C12.3013%2016.8244%2012.1078%2016.9057%2011.9057%2016.9057Z&#39;%20fill=&#39;black&#39;/%3e%3c/svg%3e"
+                                                    class="arrow position-absolute" alt="" data-v-257d3a35>
+                                            </div>
+                                            <ul class="dropdown-menu w-100 dd-animated dd-menu-start bg-white shadow-sm"
+                                                data-v-257d3a35><!--[-->
+                                                <li class="dropdown-item" data-v-257d3a35>Sender</li>
+                                                <li class="dropdown-item" data-v-257d3a35>Receiver
+                                                </li><!--]-->
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="input-container mb-16 dropdown" data-v-83e86a3a data-v-257d3a35>
+                                    <div class="input-box position-relative" data-v-257d3a35>
+                                        <div class="input-group" data-bs-toggle="dropdown" role="row"
+                                            aria-expanded="false" data-v-257d3a35>
+                                            <div class="form-floating position-relative" data-v-257d3a35>
+                                                <!--[-->
+                                                <div class="form-control border-0 shadow-none bg-transparent"
+                                                    data-v-257d3a35><!----></div><!--]--><label for="payment_type"
+                                                    data-v-257d3a35>Payment type</label><img
+                                                    src="data:image/svg+xml,%3csvg%20width=&#39;24&#39;%20height=&#39;24&#39;%20viewBox=&#39;0%200%2024%2024&#39;%20fill=&#39;none&#39;%20xmlns=&#39;http://www.w3.org/2000/svg&#39;%3e%3cpath%20d=&#39;M11.9057%2016.9057C11.7035%2016.9057%2011.51%2016.8244%2011.3687%2016.6796L3.27467%208.38425C2.98555%208.08762%202.99117%207.61287%203.2878%207.32337C3.58405%207.03425%204.05917%207.04025%204.3483%207.3365L11.9053%2015.0817L19.4784%207.32037C19.7679%207.02375%2020.243%207.0185%2020.5389%207.30725C20.8356%207.59637%2020.8415%208.0715%2020.552%208.36812L12.4427%2016.6796C12.3013%2016.8244%2012.1078%2016.9057%2011.9057%2016.9057Z&#39;%20fill=&#39;black&#39;/%3e%3c/svg%3e"
+                                                    class="arrow position-absolute" alt="" data-v-257d3a35>
+                                            </div>
+                                            <ul class="dropdown-menu w-100 dd-animated dd-menu-start bg-white shadow-sm"
+                                                data-v-257d3a35><!--[-->
+                                                <li class="dropdown-item" data-v-257d3a35>Cash</li>
+                                                <li class="dropdown-item" data-v-257d3a35>By card</li>
+                                                <li class="dropdown-item" data-v-257d3a35>Through the bank</li><!--]-->
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="input-container mb-16" selected-value data-v-83e86a3a>
+                                    <div class="input-box position-relative">
+                                        <div class="input-group">
+                                            <div class="form-floating"><!--[--><textarea type="text"
+                                                    class="form-control border-0 shadow-none bg-transparent"
+                                                    id="comment" name="comment"
+                                                    placeholder="Comment on the order"></textarea><!--]--><label
+                                                    for="comment">Comment on the order</label></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="calculate-price d-flex justify-content-center w-100 mt-40" data-v-83e86a3a>
+                    <button class="btn main-button" type="button" data-v-83e86a3a>
+                        <div><!--[-->Calculation<!--]--></div>
+                    </button>
+                </div>
+            </div>
+            <div class="calculation-results-bottomsheet position-absolute bottom-0 start-0 end-0" data-v-83e86a3a>
+                <div class="calculator-results-background"></div>
+                <div class="calculator-results-container">
+                    <div class="calculation-results-header d-flex justify-content-between align-items-center mb-24">
+                        <div></div>
+                        <h4 class="header">Hisoblash natijalari</h4><button type="button"><img
+                                onerror="this.setAttribute(&#39;data-error&#39;, 1)" width="25" alt data-nuxt-img
+                                srcset="/_ipx/w_25/assets/image/icons/close-default.svg 1x, /_ipx/w_50/assets/image/icons/close-default.svg 2x"
+                                class="" src="_ipx/w_25/assets/image/icons/close-default.svg"></button>
+                    </div>
+                    <div class="calculation-results h-100 overflow-y-auto">
+                        <div class="wrapper-background">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div class="address-info-wrapper"><!--[-->
+                                        <div class="address-info">
+                                            <p class="name">Yuklash manzili:</p>
+                                            <p class="data"> </p>
+                                        </div><!--]--><!--[-->
+                                        <div class="address-info">
+                                            <p class="name">Yuk tushirish manzili:</p>
+                                            <p class="data"></p>
+                                        </div><!--]-->
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div
+                                        class="truck-info-wrapper h-100 d-flex flex-column justify-content-between align-items-center">
+                                        <div class="row d-flex">
+                                            <div class="col-7">
+                                                <div class="truck-info">
+                                                    <p class="truck-name-header">Tanlangan avto:</p>
+                                                    <p class="truck-info"></p>
+                                                    <p class="truck-info">xx, kg gacha</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-4 offset-1 d-flex align-items-center justify-content-end">
+                                                <div class="truck-image text-end"><img
+                                                        onerror="this.setAttribute(&#39;data-error&#39;, 1)"
+                                                        data-nuxt-img
+                                                        srcset="https://example.com 1x, https://example.com 2x"
+                                                        src="https://example.com/" class="w-100"></div>
+                                            </div>
+                                        </div>
+                                        <div class="text-center mt-24"><button class="text-decoration-underline"
+                                                type="button">O&#39;zgartirish</button></div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="parcel-details-wrapper">
+                                        <h4 class="header">Buyurtma tafsilotlari:</h4>
+                                        <div>
+                                            <div class="parcel-info">
+                                                <p class="name">Yuk vazni</p>
+                                                <p class="data"> kg</p>
+                                            </div>
+                                            <div class="parcel-info">
+                                                <p class="name">Yuk turi</p>
+                                                <p class="data"></p>
+                                            </div>
+                                            <div class="parcel-info">
+                                                <p class="name">Qabul qiluvchi raqami</p>
+                                                <p class="data"></p>
+                                            </div>
+                                            <div class="parcel-info">
+                                                <p class="name">Kim to&#39;laydi</p>
+                                                <p class="data"></p>
+                                            </div>
+                                            <div class="parcel-info">
+                                                <p class="name">To&#39;lov turi</p>
+                                                <p class="data"></p>
+                                            </div><!---->
+                                            <div class="parcel-info">
+                                                <p class="name">Buyurtmaga sharh</p>
+                                                <p class="data">-</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="calculation-price text-center mt-16"><!----><!---->
+                            <p class="m-0 text-center text-danger w-50 mx-auto py-3">Ushbu avto faqat bir
+                                viloyat ichida mavjud, boshqa avto tanlang</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <div class="calculator-parallax thumbnail" data-v-83e86a3a></div>
+
+
+    </section>
+
+
+        <!-- JavaScript Libraries -->
+
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/counterup/counterup.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    
+        <!-- Template Javascript -->
+
+        <script src="js/main.js"></script>
+</body>
+</html>
+

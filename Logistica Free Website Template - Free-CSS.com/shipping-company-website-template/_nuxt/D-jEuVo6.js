@@ -1,0 +1,1 @@
+import{k as s,Q as a,E as o,X as n,Y as r}from"./c1m8qkdf.js";const i=s({__name:"OrdersTypeSelectButton",props:{setActiveTab:{type:Function},status:{}},setup(p){return(t,e)=>(a(),o("li",null,[n("button",{onClick:e[0]||(e[0]=()=>t.setActiveTab(t.status)),class:"dropdown-item",type:"button"},r(t.$t(`tabs.tab_${t.status}`)),1)]))}});export{i as default};
