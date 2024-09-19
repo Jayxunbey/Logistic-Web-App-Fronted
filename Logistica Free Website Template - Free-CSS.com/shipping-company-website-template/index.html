@@ -137,7 +137,7 @@
 
     <section id="calculator" class="position-relative" data-v-83e86a3a>
         <form novalidate class="container calculator-container position-relative overflow-hidden" data-v-83e86a3a>
-            <h2 class="calculator-heading text-center mb-24" data-v-83e86a3a>Calculate Cargo cost  
+            <h2 class="calculator-heading text-center mb-24" data-v-83e86a3a>Calculate Cargo cost
             </h2>
             <div class="action-buttons" data-v-83e86a3a>
                 <ul class="d-flex w-100 justify-content-center align-items-center actions" data-v-83e86a3a>
@@ -191,26 +191,22 @@
                                         <div class="dropdown-menu w-100">
                                             <div class="search-input-dropdown">
                                                 <ul class=" p-0 m-0" id="address-search-results-for-from">
-                                                    <li class="text-center py-4 "
-                                                    id="search-animation-region-for-from"
+                                                    <li class="text-center py-4 " id="search-animation-region-for-from"
                                                         style="display:none;">
                                                         <div class="text-center mb-1">
-                                                                 <div class="spinner-border text-orange" role="status">
+                                                            <div class="spinner-border text-orange" role="status">
                                                                 <span class="visually-hidden">Loading...</span>
                                                             </div>
                                                         </div>
                                                     </li>
-                                                    <div class="text-center" 
-                                                    id="no-search-results-for-from"
-                                                         style="display: block;">
+                                                    <div class="text-center" id="no-search-results-for-from"
+                                                        style="display: block;">
                                                         no search results...</div>
 
                                                     <div id="search-results-for-from" style="display: none;">
-                                                        
+
 
                                                     </div>
-
-
                                                     <!--[--><!--]-->
                                                 </ul>
                                             </div>
@@ -223,39 +219,34 @@
                                         <div class="input-group" data-bs-toggle="dropdown" role="row"
                                             data-bs-auto-close="outside" aria-expanded="false">
                                             <div class="form-floating"><input type="text"
-                                                    class="form-control border-0 bg-transparent" id="address_to_0"
-                                                    placeholder="Detrainment location"><label
+                                                    class="form-control border-0 bg-transparent"
+                                                    oninput="inputHandleAddressChange('to')" inp-catg="to"
+                                                    id="address_to_0"  placeholder="Detrainment location"><label
                                                     for="address_to_0">Detrainment location</label></div>
                                         </div>
                                         <div class="dropdown-menu w-100">
                                             <div class="search-input-dropdown">
-                                                <!-- <ul class="address-search-results-for-to p-0 m-0">
-                                                    <li class="text-center py-4 search-animation-region"
+                                                <ul class=" p-0 m-0" id="address-search-results-for-to">
+                                                    <li class="text-center py-4 "
+                                                    id="search-animation-region-for-to"
                                                         style="display:none;">
                                                         <div class="text-center mb-1">
-                                                            <div class="spinner-border text-orange" role="status">
+                                                                 <div class="spinner-border text-orange" role="status">
                                                                 <span class="visually-hidden">Loading...</span>
                                                             </div>
                                                         </div>
                                                     </li>
-                                                    <div class="address-item no-search-results text-center"
-                                                        style="display: none;">
+                                                    <div class="text-center" 
+                                                    id="no-search-results-for-to"
+                                                         style="display: block;">
                                                         no search results...</div>
 
-                                                    <div class="search-results-for-to" style="display: block;">
-                                                        <li class="address-item text-center"
-                                                            onclick="placing_value_to_address('address_to_0','address-to-result-1')"
-                                                            id="address-to-result-1" value="7">
-                                                            Quqan</li>
-                                                        <li class="address-item text-center"
-                                                            onclick="placing_value_to_address('address_to_0','address-to-result-2')"
-                                                            id="address-to-result-2" value="9">
-                                                            Istanbul</li>
+                                                    <div id="search-results-for-to" style="display: none;">
+                                                        
+
                                                     </div>
-
-
-                                                
-                                                </ul> -->
+                                                    <!--[--><!--]-->
+                                                </ul>
                                             </div>
                                         </div>
                                     </div>
@@ -265,7 +256,7 @@
                                     <!--[--><label
                                         class="round-trip-wrapper user-select-none d-flex align-items-center">Going and
                                         Coming Back
-                                        <input type="checkbox" name="is_full_round_trip"></label><!--]-->
+                                        <input type="checkbox" id="is_full_round_trip"></label><!--]-->
                                 </div><!---->
 
                                 <!-- Time Selection -->
@@ -277,11 +268,11 @@
 
                                         <div class="field-group">
                                             <label for="date">Date:</label>
-                                            <input type="date" id="date" name="date" required>
+                                            <input type="date" id="datequ" name="date" onchange="callDateChange()" required>
                                         </div>
                                         <div class="field-group">
                                             <label for="time">Time:</label>
-                                            <input type="time" id="time" name="time" required>
+                                            <input type="time" id="timequ" name="time" onchange="callTimeChange()" required>
                                         </div>
 
                                     </form>

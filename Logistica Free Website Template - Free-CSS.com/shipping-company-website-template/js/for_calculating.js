@@ -1,3 +1,74 @@
+window.onload = reloadForm;
+
+function reloadForm() {
+
+    
+
+    if (localStorage.getItem("formReqData") === null){
+        const formReqData = {
+            "isComeBack" : false
+        };
+
+        localStorage.setItem("formReqData", JSON.stringify(formReqData));
+        
+    }
+    
+
+};
+
+
+////////////////////////////////////////////////// Vaqt uchun
+
+function callDateChange(){
+    const datequ = document.getElementById("datequ");
+    
+    console.info("date chiqdi: ", datequ)
+    console.info("date chiqdi: ", datequ.value)
+
+    const formReqData = JSON.parse(localStorage.getItem("formReqData"));
+
+    formReqData.date = datequ.value;
+
+    localStorage.setItem("formReqData",JSON.stringify(formReqData));
+
+
+}
+
+function callTimeChange(){
+    const timequ = document.getElementById("timequ");
+    
+    console.info("date chiqdi: ", timequ)
+    console.info("date chiqdi: ", timequ.value)
+
+    const formReqData = JSON.parse(localStorage.getItem("formReqData"));
+
+    formReqData.time = timequ.value;
+
+    localStorage.setItem("formReqData",JSON.stringify(formReqData));
+
+
+}
+
+//////////////////////////////////////////////////// SELETING CHECK BOX
+
+const checkBoxComing = document.getElementById('is_full_round_trip');
+
+checkBoxComing.addEventListener("change", function(event) {
+    const isChecked = event.target.checked;
+
+    var formReqData =JSON.parse(localStorage.getItem('formReqData'));
+
+
+    if (isChecked) {
+        formReqData['isComeBack'] = true;
+    } else {
+        formReqData['isComeBack'] = false;
+    }
+
+    localStorage.setItem('formReqData',JSON.stringify(formReqData));
+
+})
+
 
 //////////////////////////////////////////////////////  select from searching data
 
@@ -24,7 +95,7 @@ function placing_value_to_address(inpCatg,regId){
 
 
 
-    var formReqData = localStorage.getItem('formReqData');
+    var formReqData = JSON.parse(localStorage.getItem('formReqData'));
 
 
     if (formReqData === null)
@@ -32,11 +103,14 @@ function placing_value_to_address(inpCatg,regId){
         formReqData = {};
     }
 
-    formReqData.from = regId;
     
-    localStorage.setItem("formReqData",formReqData);
+    formReqData[`${inpCatg}`] = regId;
 
 
+    
+    localStorage.setItem("formReqData",JSON.stringify(formReqData));
+
+    console.info('saqladi: ',formReqData);
 
 
 }
@@ -46,12 +120,6 @@ function writeRegionToPlaceHolder(inpCatg,el){
     const inputE = document.getElementById(`address_${inpCatg}_0`);
     inputE.value = el.textContent;
 }
-
-
-
-
-
-
 
 
 
@@ -77,7 +145,27 @@ function writeRegionToPlaceHolder(inpCatg,el){
 
     console.info(inp_element_data);
 
-    const url = new URL('http://localhost:8081/api/region/search');
+    var url; 
+    
+
+    var formReqData =JSON.parse(localStorage.getItem('formReqData'));
+
+
+
+    if (inpCatg === 'to'){
+        url = new URL('http://localhost:8081/api/region/search-without-region');
+        
+        url.searchParams.append('except-region-id', formReqData['from']!=null?formReqData['from']:("-1"));
+    
+        console.info('to ishladur');
+    }else{
+
+        url = new URL('http://localhost:8081/api/region/search-without-region');
+        
+        url.searchParams.append('except-region-id', formReqData['to']!=null?formReqData['to']:("-1"));
+        console.info('from ishladur');
+    }
+    
     url.searchParams.append('region', inp_element_data);
     
           fetch(url,
