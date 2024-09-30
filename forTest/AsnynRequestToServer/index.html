@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serverga Asinxron So'rov</title>
+</head>
+<body>
+    <h1>Serverga Har 5 minutda Asinxron So'rov Yuborish</h1>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+
+            console.info("Sahifa yuklandi");
+
+            // const fetchData = async () => {
+            //     try {
+            //         fetch('http://localhost:8081/api/attachment/notice-about-staying', {
+            //             method: 'GET', // yoki 'POST', kerak bo'lsa
+            //             headers: {
+            //                 'Content-Type': 'application/json',
+            //             }
+            //         });
+            //         console.log("Serverga borib kelindi:");
+            //     } catch (error) {
+            //         console.error("Xatolik:", error);
+            //     }
+            // };
+
+            setInterval(() => {
+                fetch('http://localhost:8081/api/attachment/notice-about-staying', {
+                    method: 'GET', // yoki 'POST', kerak bo'lsa
+                    headers: {
+                        'Content-Type': 'application/json',
+                    }
+                })
+                .then(data => {
+                    console.log("Serverdan javob:", data);
+                })
+                .catch(error => {
+                    console.error("Xatolik:", error);
+                });
+            }, 3000); // 300000 millisekund = 5 minut
+
+            
+            console.info('asyxron ishlab, undan otib ketildi') // 300000 millisekund = 5 minut
+        });
+    </script>
+</body>
+</html>
